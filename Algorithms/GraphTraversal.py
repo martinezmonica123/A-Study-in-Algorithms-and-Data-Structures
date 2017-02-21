@@ -50,8 +50,8 @@ graph = {'A': ['B', 'C'],
          'H': ['G', 'I'],
          'I': ['H'] }
 
-print "Breadth-First Search: %s " % bfs(graph2, 'A', 'F')
-print "Depth-First Search: %s " % dfs(graph2, 'A', 'F')
+print "Breadth-First Search: %s " % bfs(graph, 'A', 'F')
+print "Depth-First Search: %s " % dfs(graph, 'A', 'F')
 
 #############################################################
 
