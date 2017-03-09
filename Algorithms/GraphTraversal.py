@@ -1,7 +1,26 @@
+'''
+    Undirected Graph Traversal:
+        Breadth-First Search and Depth-First Search Implementations         
 
-############################################################
-######            Undirected Graph Traversal          ######
-############################################################
+             INPUT:
+                Graph:
+
+                 START = A -- C -- E
+                         |  / |
+                         | /  |
+                         B -- D
+                         |  / |
+                         | /  |
+                   END = F    G -- H
+                                   |
+                                   |
+                                   I
+
+            OUTPUT:
+                BFS = [A, B, F]
+                DFS = [A, B, C, D, F]
+
+'''
 
 
 def bfs(graph, start, end):
@@ -18,8 +37,8 @@ def bfs(graph, start, end):
         for v in graph[u]:
             if v not in visited:
                 visited.add(v)
-                temp_path = path + [v]
-                queue.append(temp_path)
+                curr_path = path + [v]
+                queue.append(curr_path)
     return None
 
 
@@ -40,40 +59,16 @@ def dfs(graph, node, end, visited=set(), path=[]):
     return None
 
 
-graph = {'A': ['B', 'C'],
-		 'B': ['A', 'C', 'D','F'],
-		 'C': ['A','B','D','E'],
-		 'D':['B','C','F','G'],
-		 'E': ['C'],
-		 'F':['B', 'D'],
-		 'G':['D', 'H'],
-         'H': ['G', 'I'],
-         'I': ['H'] }
+if __name__ == "__main__":
+    graph = {'A': ['B', 'C'],
+    		 'B': ['A', 'C', 'D', 'F'],
+    		 'C': ['A', 'B', 'D', 'E'],
+    		 'D': ['B', 'C', 'F', 'G'],
+    		 'E': ['C'],
+    		 'F': ['B', 'D'],
+    		 'G': ['D', 'H'],
+             'H': ['G', 'I'],
+             'I': ['H']}
 
-print "Breadth-First Search: %s " % bfs(graph, 'A', 'F')
-print "Depth-First Search: %s " % dfs(graph, 'A', 'F')
-
-#############################################################
-
-
-#  INPUT:
-
-#             Graph:
-#
-#      START = A -- C -- E
-#              |  / |
-#              | /  |
-#              B -- D
-#              |  / |
-#              | /  |
-#        END = F    G -- H
-#                        |
-#                        |
-#                        I
-
-
-# OUTPUT:
-
-#   BFS = [A, B, F]
-#   DFS = [A, B, C, D, F]
-#
+    print "Breadth-First Search: %s " % bfs(graph, 'A', 'F')
+    print "Depth-First Search: %s " % dfs(graph, 'A', 'F')
