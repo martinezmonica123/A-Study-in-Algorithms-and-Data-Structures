@@ -43,7 +43,7 @@ def bfs(graph, start, end):
 
 
 def dfs(graph, node, end, visited=set(), path=[]):
-    # def _dfs(graph, node, end, visited, path):
+    
     path = path + [node]
 
     if node == end:
@@ -70,5 +70,5 @@ if __name__ == "__main__":
              'H': ['G', 'I'],
              'I': ['H']}
 
-    print "Breadth-First Search: %s " % bfs(graph, 'A', 'F')
-    print "Depth-First Search: %s " % dfs(graph, 'A', 'F')
+    print ("Breadth-First Search: %s " % bfs(graph, 'A', 'F'))
+    print ("Depth-First Search: %s " % dfs(graph, 'A', 'F'))
