@@ -1,23 +1,23 @@
+'''
 
-############################################################
-######              Binary Tree Traversal             ######
-############################################################
+    Binary Tree Traversal
+    Inorder, Preorder, and Postorder binary tree traversal. (Variations of DFS.)
+    ============================================================================
 
-# Inorder, Preorder, and Postorder binary tree traversal. (Variations of DFS.)
+    Assuming this data structure:
+    =============================
+    class BSTNode():
+        def __init__(self, data=None, parent=None):
+            self.data = data
+            self.left = None
+            self.right = None
+            self.parent = None
+    class BSTree():
+        def __init__(self):
+            self.root = None
 
-# Assuming this data structure:
-# class BSTNode():
-#     def __init__(self, data=None, parent=None):
-#         self.data = data
-#         self.left = None
-#         self.right = None
-#         self.parent = None
-# class BSTree():
-#     def __init__(self):
-#         self.root = None
 
-############################################################
-
+'''
 def inorder(root):
     def _inorder(node):
         if node:
