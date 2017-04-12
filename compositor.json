@@ -1,0 +1,92 @@
+{
+  "name": "martinezmonica123/A-Study-in-Algorithms-and-Data-Structures",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "",
+  "branch": "",
+  "style": {
+    "name": "Future",
+    "componentSet": {
+      "nav": "nav/BasicNav",
+      "header": "header/BannerHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "\"Avenir Next\", Helvetica, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "textTransform": "uppercase",
+      "letterSpacing": "0.2em"
+    },
+    "alternativeText": {
+      "textTransform": "uppercase",
+      "fontWeight": 400,
+      "letterSpacing": "0.2em",
+      "opacity": 0.75
+    },
+    "colors": {
+      "text": "#333",
+      "background": "#fff",
+      "primary": "#666",
+      "secondary": "#888",
+      "highlight": "#1f80ff",
+      "muted": "#f6f6f6",
+      "border": "#eee"
+    },
+    "layout": {
+      "centered": true,
+      "maxWidth": 1024,
+      "bannerHeight": "80vh"
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://github.com/martinezmonica123/A-Study-in-Algorithms-and-Data-Structures",
+          "text": "GitHub"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "A-Study-in-Algorithms-and-Data-Structures",
+      "subhead": "Simple implementation project to help sharpen my algorithm and data structure skills.",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "A-Study-in-Algorithms-and-Data-Structures: Simple implementation project to help sharpen my algorithm and data structure skills.",
+          "url": null
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "martinezmonica123",
+          "repo": "A-Study-in-Algorithms-and-Data-Structures"
+        }
+      ]
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<h1>A Study in Algorithms and Data Structures</h1>\n<h3>Simple implementation project to help sharpen my algorithm and data structure skills.</h3>\n<h3>Overview (work in progress)</h3>\n<h4>Algorithms</h4>\n<h6>Graphs</h6>\n<ul>\n<li>Implementation: Adjacency List</li>\n<li>Graph Traversal <ul>\n<li>Breadth-First Search</li>\n<li>Depth-First Search</li>\n</ul>\n</li>\n<li>Acyclic Connected Graphs: Binary Search Trees</li>\n<li>Tree Traversal <ul>\n<li>Inorder, Preorder, Postorder</li>\n</ul>\n</li>\n<li>Paths (Undirected &amp; Unweighted Graphs)<ul>\n<li>Shortest Path</li>\n<li>Root-to-Leaf Paths</li>\n<li>Connected Components</li>\n</ul>\n</li>\n</ul>\n<h6>Greedy Algorithms</h6>\n<ul>\n<li>Minimum Spanning Tree<ul>\n<li>Prim&apos;s Algorithm</li>\n</ul>\n</li>\n<li>Shortest Path (Weighted Graph)<ul>\n<li>Dijkstra&apos;s Algorithm</li>\n</ul>\n</li>\n</ul>\n<h6>Divide and Conquer</h6>\n<h6>Dynamic Programming</h6>\n<h4>Data Structures</h4>\n<ul>\n<li>Graphs</li>\n<li>Stacks and Queues</li>\n<li>Trees<ul>\n<li>Binary (Search) Trees</li>\n<li>General Trees</li>\n</ul>\n</li>\n<li>Linked Lists</li>\n</ul>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/martinezmonica123/A-Study-in-Algorithms-and-Data-Structures",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/martinezmonica123",
+          "text": "martinezmonica123"
+        }
+      ]
+    }
+  ]
+}
