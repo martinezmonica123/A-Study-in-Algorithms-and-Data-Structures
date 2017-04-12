@@ -43,15 +43,6 @@
   },
   "content": [
     {
-      "component": "nav",
-      "links": [
-        {
-          "href": "https://github.com/martinezmonica123/A-Study-in-Algorithms-and-Data-Structures",
-          "text": "GitHub"
-        }
-      ]
-    },
-    {
       "component": "header",
       "heading": "A-Study-in-Algorithms-and-Data-Structures",
       "subhead": "Simple implementation project to help sharpen my algorithm and data structure skills.",
